@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+}
+.layout-header{
+    position: relative;
+    height: 100%;
+    background: #fff;
+    z-index: 9;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .05);
+    border-bottom: 1px solid #eee;
+    padding: 0px 32px;
+}
+.layout-header .layout-header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    
+}
+.img-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+.img-logo span{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    color: #313131;
+}
+.page-title span{
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #313131;
+}
+.header-links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.user-menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.all-tools-icon{
+    background-image: url("/tools.svg");
+    display: inline-block;
+    margin-right: 5px;
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+}
+.sign-up-btn{
+    border: 2px solid;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: all 150ms linear!important;
+    color: #e74c3c;
+    border-color: #e74c3c!important;
+    font-size: 14px;
+    padding: 10px 22px;
+}
+.layout-main{
+    margin: 5rem 0;
+}
+.layout-container .content-wrapper {
+    max-width: 1224px;
+    margin: auto;
+    position: relative;
+}
+.content-wrapper form{
+        width: 436px;
+        max-width: 100%;
+        margin: auto;
+}
+.social-buttons{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.social-buttons .btn{
+    width: 100%;
+    padding: 8px 5px;
+    font-size: 18px;
+    line-height: 23px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.social-buttons .google{
+    transition: all 300ms;
+    border-radius: 100px;
+    color: #313131;
+    font-weight: 700;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+}
+.social-buttons .facebook{
+    background-color: #3b5995;
+    color: #fff;
+    transition: all 300ms;
+    border-radius: 100px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #3b5995;
+    cursor: pointer;
+}
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 1rem 0;
+}
+.strike span {
+    position: relative;
+    display: inline-block;
+    color: #313131;
+    font-size: 16px;
+    font-weight: 400;
+}
+.strike span:before {
+    box-sizing: border-box;
+    right: 100%;
+    margin-right: 15px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #eee;
+}
+.strike span:after {
+    box-sizing: border-box;
+    left: 100%;
+    margin-left: 15px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #eee;
+}
+.input-group{
+    position: relative;
+}
+.input-group input {
+    position: relative;
+    display: block;
+    background: #fff;
+    border: 2px solid #ede7e7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 51px;
+    width: 100%;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #313131;
+}
+.password{
+    display: flex;
+}
+.input-group span{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.actions button{
+    background-color: #e74c3c;
+    border: none;
+    color: #fff!important;
+    width: 100%;
+    cursor: pointer;
+    transition: all 300ms;
+    border-radius: 100px;
+    padding: 20px 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+}
+.margin-auto{
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
+}
+.margin-auto a{
+    color: #3498db;
+}
+form hr {
+    border-top: 1px solid #eee;
+    margin: 1rem 0;
+}
+footer{
+    padding: 40px 32px;
+    border-top: 1px solid #eee;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    justify-content: center;
+    margin: auto;
+    padding: 40px 0;
+}
+footer .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+footer ul{
+    list-style: none;
+    margin-top: 20px;
+}
+footer ul li{
+    padding-bottom: 10px;
+}
+footer ul li a{
+    font-size: 16px;
+    line-height: 20px;
+}
+footer .social{
+    text-align: center;
+    max-width: 180px;
+}
+.counter-wrapper hr {
+    border-top: 1px solid #eee;
+    margin: 1rem 0;
+}
+.brand-text{
+    color:#e74c3c;
+    font-weight: 400;
+    font-size: 30px;
+}
+.social-icons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.footer-bottom{
+    border-top: 1px solid #eee;
+    padding-top: 40px;
+}
+.footer-bottom .content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-bottom .language .language-button .icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url("/icon.svg");
+    background-size: 11px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    background-position: center;
+}
+.footer-bottom .language .language-button{
+    display: flex;
+}
+.layout-header .mobile-hamburger {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-image: url("/hamburger.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.sign-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.sign-title span{
+    display: none;
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #313131;
+}
+
+@media  screen and (max-width: 768px) {
+    .page-title{
+        display: none;
+    }
+    .header-links{
+        display: none;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin: auto;
+    }
+    .mobile-hamburger{
+        display: block!important;
+    }
+    .sign-title span{
+        display: block;
+    }
+    
+}
+
+
+
+

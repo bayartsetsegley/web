@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign</title>
+    <link rel="stylesheet" href="/sign.css" />
+  </head>
+  <body>
+    <header class="layout-header">
+      <nav class="layout-header-nav">
+        <div class="logo-wrapper">
+          <a class="logo img-logo" href="/">
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="brand-color"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 3.58537C0 1.60522 1.57657 0 3.52136 0H13.5824C15.5272 0 17.1037 1.60522 17.1037 3.58537V13.3171L14.0854 10.2439V3.58537C14.0854 3.30249 13.8602 3.07317 13.5824 3.07317H3.52136C3.24353 3.07317 3.01831 3.30249 3.01831 3.58537V17.4146C3.01831 17.6975 3.24353 17.9268 3.52136 17.9268H8.55187H13.5824C13.8602 17.9268 14.0854 17.6975 14.0854 17.4146V14.9779L20 21H13.5824H8.55187H3.52136C1.57657 21 0 19.3948 0 17.4146V3.58537Z"
+                fill="#E74C3C"
+              ></path>
+            </svg>
+            <span class="logo-text">PDF Converter</span>
+          </a>
+        </div>
+        <div class="page-title"><span>Sign In</span></div>
+        <div class="header-links">
+          <a class="all-tools" href="#">
+            <span class="all-tools-icon"></span>
+            Tools
+          </a>
+          <div class="user-menu">
+            <a href="/a/si" class="menu-item show-unauth">Sign In</a>
+            <a id="SignUpHeader" href="/membership" class="sign-up-btn"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+        <div class="mobile-hamburger"></div>
+      </nav>
+    </header>
+    <div class="sign-title"><span>Sign In</span></div>
+    <main class="layout-main">
+      <div class="layout-container">
+        <div class="content-wrapper">
+          <form id="signin-form" action="/a/si" method="post">
+            <div class="social-buttons">
+              <a
+                class="btn google"
+                title="Sign in with Google"
+                href="/a/signin-google?returnUrl=%2F">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="none">
+                  <defs></defs>
+                  <path
+                    fill="#FBBD00"
+                    d="M7.5 16c0-1.585.437-3.07 1.196-4.342V6.263H3.3A15.879 15.879 0 000 16c0 3.567 1.16 6.956 3.301 9.737h5.395v-5.395A8.448 8.448 0 017.5 16z"
+                  ></path>
+                  <path
+                    fill="#0F9D58"
+                    d="M16 24.5l-3.75 3.75L16 32a15.88 15.88 0 009.737-3.301V23.31h-5.389A8.5 8.5 0 0116 24.5z"
+                  ></path>
+                  <path
+                    fill="#31AA52"
+                    d="M8.696 20.342L3.3 25.737c.424.55.886 1.077 1.385 1.577A15.895 15.895 0 0016 32v-7.5a8.503 8.503 0 01-7.304-4.158z"
+                  ></path>
+                  <path
+                    fill="#3C79E6"
+                    d="M32 16c0-.973-.088-1.949-.262-2.899l-.14-.768H16v7.5h7.59a8.461 8.461 0 01-3.242 3.477l5.389 5.389a16.25 16.25 0 001.577-1.385A15.896 15.896 0 0032 16z"
+                  ></path>
+                  <path
+                    fill="#CF2D48"
+                    d="M22.01 9.99l.663.662 5.304-5.303-.663-.663A15.895 15.895 0 0016 0l-3.75 3.75L16 7.5c2.27 0 4.405.884 6.01 2.49z"
+                  ></path>
+                  <path
+                    fill="#EB4132"
+                    d="M16 7.5V0A15.896 15.896 0 004.686 4.686c-.5.5-.96 1.027-1.385 1.577l5.395 5.395A8.504 8.504 0 0116 7.5z"
+                  ></path>
+                </svg>
+                Google
+              </a>
+              <a
+                class="btn facebook"
+                title="Sign in with Facebook"
+                href="/a/signin-facebook?returnUrl=%2F%23fbauth"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="none"
+                >
+                  <defs></defs>
+                  <path
+                    fill="#fff"
+                    d="M16 .067c-8.836 0-16 7.163-16 16 0 7.925 5.768 14.488 13.332 15.76V19.404h-3.86v-4.47h3.86v-3.296c0-3.825 2.335-5.909 5.747-5.909 1.635 0 3.04.122 3.447.176v3.997l-2.367.001c-1.855 0-2.213.882-2.213 2.175v2.853h4.427l-.577 4.47h-3.85v12.531C25.863 30.97 32 24.24 32 16.063 32 7.23 24.836.066 16 .066z"
+                  ></path>
+                </svg>
+                Facebook
+              </a>
+            </div>
+            <div class="strike">
+              <span> Or </span>
+            </div>
+            <div class="input-group">
+              <input
+                data-val="true"
+                data-val-email="Please enter a valid e-mail"
+                data-val-required="The E-mail field is required."
+                id="Email"
+                name="Email"
+                placeholder="E-mail"
+                required="required"
+                type="email"
+                value=""
+              />
+            </div>
+            <div class="input-group password">
+              <input
+                data-val="true"
+                data-val-required="The Password field is required."
+                id="Password"
+                name="Password"
+                placeholder="Password"
+                required="required"
+                type="password"
+              />
+              <span
+                class="password-eye js-toggle-password"
+                title="Show password"
+              >
+                <svg
+                  width="21"
+                  height="12"
+                  viewBox="0 0 21 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.2645 5.2799C20.0842 5.06725 15.7747 0.0795441 10.2656 0.0795441C4.75626 0.0795441 0.446923 5.06725 0.266177 5.28011C-0.0884349 5.69705 -0.0884349 6.30204 0.266386 6.7194C0.446923 6.93204 4.75626 11.9195 10.2656 11.9195C15.7747 11.9195 20.0842 6.93163 20.2648 6.71898C20.6194 6.30204 20.6194 5.69705 20.2645 5.2799ZM11.9484 3.07571C12.3188 2.8735 12.8354 3.10553 13.102 3.59377C13.3687 4.08222 13.2845 4.64218 12.914 4.8444C12.5438 5.04682 12.027 4.81459 11.7601 4.32634C11.4937 3.83789 11.5777 3.27793 11.9484 3.07571ZM10.2656 10.1125C6.41716 10.1125 3.17854 7.15698 2.05758 5.99954C2.81455 5.21777 4.53799 3.61691 6.76219 2.6596C6.32835 3.31963 6.07402 4.10828 6.07402 4.95718C6.07402 7.27206 7.95048 9.14852 10.2654 9.14852C12.5802 9.14852 14.4569 7.27206 14.4569 4.95718C14.4569 4.10828 14.2028 3.31963 13.769 2.6596C15.9931 3.61712 17.7164 5.21777 18.4733 5.99954C17.3524 7.15761 14.1138 10.1125 10.2656 10.1125Z"
+                    fill="black"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+            <div class="input-group">
+              <input type="hidden" name="ReturnUrl" value="/" />
+            </div>
+            <div class="actions">
+              <button type="submit" class="btn btn-red brand-color">
+                Sign In
+              </button>
+              <div class="margin-auto">
+                <a href="/a/fp">Forgot password?</a>
+                <hr />
+                <span class="text-muted">Don't have a membership?</span>
+                <a id="SignUpSignIn" href="/membership">Sign Up</a>!
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="layout-footer">
+      <nav class="footer-grid">
+        <div class="column">
+          <label class="title">Member area</label>
+          <ul>
+            <li>
+              <a href="/a/si">Sign In</a>
+            </li>
+            <li>
+              <a id="SignUpFooter" href="/membership">Sign Up</a>
+            </li>
+            <li>
+              <a href="/a/fp">Forgot Password?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <label class="title">PDF Converter</label>
+          <ul>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <label class="title">Company</label>
+          <ul>
+            <li>
+              <a href="/terms">Terms and Privacy</a>
+            </li>
+            <li>
+              <a href="https://www.convertapi.com?ref=pc">Developers API</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <label class="title">Support</label>
+          <ul>
+            <li>
+              <a href="https://help.freepdfconvert.com">Help</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column social">
+          <div class="logo-wrapper">
+            <a class="logo img-logo" href="/">
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="brand-color"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 3.58537C0 1.60522 1.57657 0 3.52136 0H13.5824C15.5272 0 17.1037 1.60522 17.1037 3.58537V13.3171L14.0854 10.2439V3.58537C14.0854 3.30249 13.8602 3.07317 13.5824 3.07317H3.52136C3.24353 3.07317 3.01831 3.30249 3.01831 3.58537V17.4146C3.01831 17.6975 3.24353 17.9268 3.52136 17.9268H8.55187H13.5824C13.8602 17.9268 14.0854 17.6975 14.0854 17.4146V14.9779L20 21H13.5824H8.55187H3.52136C1.57657 21 0 19.3948 0 17.4146V3.58537Z"
+                  fill="#E74C3C"
+                ></path>
+              </svg>
+              <span class="logo-text">PDF Converter</span>
+            </a>
+          </div>
+          <div class="counter-wrapper" dir="ltr">
+            <hr />
+            <div
+              id="convert-counter"
+              data-template="{0} files converted since 2005"
+            >
+              <span class="count brand-text">294193847273</span> files converted
+              since 2005
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://twitter.com/PDF__Converter" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="20"
+                fill="#e74c3c"
+              >
+                <defs></defs>
+                <path
+                  class="brand-color"
+                  d="M23.643 2.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 002.048-2.578 9.3 9.3 0 01-2.958 1.13 4.66 4.66 0 00-7.938 4.25 13.229 13.229 0 01-9.602-4.868 4.66 4.66 0 001.442 6.22 4.647 4.647 0 01-2.11-.583v.06a4.66 4.66 0 003.737 4.568 4.693 4.693 0 01-2.104.08 4.661 4.661 0 004.352 3.234 9.349 9.349 0 01-5.786 1.995 9.5 9.5 0 01-1.112-.065 13.176 13.176 0 007.14 2.093c8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602a9.47 9.47 0 002.323-2.41l.002-.003z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/freepdfconvert" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#e74c3c"
+              >
+                <defs></defs>
+                <path
+                  class="brand-color"
+                  fill-rule="evenodd"
+                  d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/best-pdf-converter"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="#e74c3c"
+              >
+                <defs></defs>
+                <path
+                  class="brand-color"
+                  fill-rule="evenodd"
+                  d="M0 1.838A1.838 1.838 0 011.838 0H20.16A1.836 1.836 0 0122 1.838V20.16A1.838 1.838 0 0120.161 22H1.838A1.839 1.839 0 010 20.161V1.838zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634 3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8-1.515 0-2.145 1.089-2.145 2.8v5.106H8.708V8.388zm-5.5 10.403h3.208V8.25H3.208V18.791zM6.875 4.812a2.063 2.063 0 11-4.125.09 2.063 2.063 0 014.125-.09z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="footer-bottom">
+        <div class="content-wrapper">
+          <div class="copyright">© 2023 Baltsoft</div>
+          <div class="language">
+            <a class="language-button" href="#modal=selectlanguage">
+              <span> English </span>
+              <span class="icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
